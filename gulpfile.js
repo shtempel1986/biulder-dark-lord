@@ -44,7 +44,7 @@ gulp.task('browser-sync', function () {
 gulp.task("babel", function () {
   return gulp.src("src/js/scripts.ES6.js")
     .pipe(babel())
-    .pipe(rename("main.js"))
+    .pipe(rename("scripts.js"))
     .pipe(gulp.dest("src/js"))
     .pipe(browserSync.reload({stream: true}));
 });
